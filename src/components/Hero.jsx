@@ -2,6 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
 import { TypeAnimation } from 'react-type-animation'
+import leoImage from '../assets/leo.jpg'; 
 
 const Hero = () => {
   return (
@@ -72,12 +73,12 @@ const Hero = () => {
           transition={{ duration: 0.8 }}
         >
           <motion.img 
-            src="src/assets/leo.jpg" 
-            alt="Leonard Aquino"
-            whileHover={{ scale: 1.05 }}
-            drag
-            dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
-          />
+          src={leoImage} 
+          alt="Leonard Aquino"
+          whileHover={{ scale: 1.05 }}
+          drag
+          dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
+        />
         </motion.div>
       </div>
     </section>
