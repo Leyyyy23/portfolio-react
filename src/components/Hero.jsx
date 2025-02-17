@@ -72,7 +72,7 @@ const Hero = () => {
           transition={{ duration: 0.8 }}
         >
           <motion.img 
-            src="src/assets/leo.jpg" 
+            src="./src/assets/leo.jpg" 
             alt="Leonard Aquino"
             whileHover={{ scale: 1.05 }}
             drag
