@@ -21,7 +21,7 @@ body {
   background: var(--dark-bg);
   color: var(--light-text);
 }
-
+  
 .navbar {
   display: flex;
   justify-content: space-between;
