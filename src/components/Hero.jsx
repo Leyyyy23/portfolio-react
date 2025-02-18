@@ -27,7 +27,7 @@ const Hero = () => {
               2000,
               'UI/UX Designer',
               2000,
-              'Web Creator',
+              'Web Developer',
               2000
             ]}
             wrapper="h2"
