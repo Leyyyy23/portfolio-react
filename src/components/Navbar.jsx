@@ -1,16 +1,25 @@
 import React, { useState, useEffect } from 'react'
+import { Link, useLocation } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { FiMenu } from 'react-icons/fi'
 
 const Navbar = () => {
   const [scroll, setScroll] = useState(false)
   const [mobileMenu, setMobileMenu] = useState(false)
+  const location = useLocation()
 
   useEffect(() => {
     window.addEventListener('scroll', () => {
       setScroll(window.scrollY > 50)
     })
   }, [])
+
+  const navItems = [
+    { path: '/', label: 'Home' },
+    { path: '/about', label: 'About' },
+    { path: '/projects', label: 'Projects' },
+    { path: '/contact', label: 'Contact' }
+  ]
 
   return (
     <motion.nav 
@@ -23,19 +32,23 @@ const Navbar = () => {
         className="nav-logo"
         whileHover={{ scale: 1.1 }}
       >
-        <h1>LA</h1>
+        <Link to="/"><h1>LA</h1></Link>
       </motion.div>
       
       <div className={`nav-links ${mobileMenu ? 'active' : ''}`}>
-        {['Home', 'About', 'Projects', 'Contact'].map((item, index) => (
-          <motion.a 
-            href={`#${item.toLowerCase()}`}
-            key={index}
+        {navItems.map((item, index) => (
+          <motion.div key={index}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
           >
-            {item}
-          </motion.a>
+            <Link 
+              to={item.path}
+              className={location.pathname === item.path ? 'active' : ''}
+              onClick={() => setMobileMenu(false)}
+            >
+              {item.label}
+            </Link>
+          </motion.div>
         ))}
       </div>
       
