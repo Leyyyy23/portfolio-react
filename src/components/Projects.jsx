@@ -16,7 +16,7 @@ const Projects = () => {
       description: "An interactive Pokemon application using the PokeAPI, allowing users to search, filter, and view detailed information about Pokemon with a clean and responsive interface.",
       tech: ["React", "Vite", "PokeAPI", "CSS", "Axios"],
       github: "https://github.com/Leyyyy23/pokedex",
-      live: "https://pokemon-explorer-app.netlify.app",
+      live: "https://pokemonleo.netlify.app",
       image: "/react (1).jpeg"
     },
   ];
