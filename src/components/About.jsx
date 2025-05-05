@@ -5,7 +5,7 @@ import { SiTailwindcss } from 'react-icons/si'
 
 const About = () => {
   const skills = [
-    { icon: FaCode, title: 'Frontend Development', desc: 'React, Vue, Angular' },
+    { icon: FaCode, title: 'Frontend Development', desc: 'React' },
     { icon: FaBrain, title: 'Problem Solving', desc: 'Algorithmic thinking' },
     { icon: FaRocket, title: 'Performance', desc: 'Optimization expert' },
     { icon: FaLaptopCode, title: 'Clean Code', desc: 'Best practices advocate' }
@@ -16,7 +16,6 @@ const About = () => {
     { icon: FaCss3Alt, name: 'CSS3', color: '#1572B6' },
     { icon: FaJs, name: 'JavaScript', color: '#F7DF1E' },
     { icon: FaReact, name: 'React', color: '#61DAFB' },
-    { icon: SiTailwindcss, name: 'Tailwind', color: '#38B2AC' },
     { icon: FaBootstrap, name: 'Bootstrap', color: '#7952B3' }
   ]
 

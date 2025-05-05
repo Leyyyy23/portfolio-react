@@ -4,20 +4,20 @@ import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 const Projects = () => {
   const projects = [
     {
-      title: "Project Alpha",
-      description: "A modern web application built with React and Node.js, featuring real-time data synchronization and responsive design.",
-      tech: ["React", "Node.js", "MongoDB", "Socket.io"],
-      github: "https://github.com/yourusername/project-alpha",
-      live: "https://project-alpha.com",
-      image: "/leo.jpg"
+      title: "Scientific Calculator",
+      description: "A modern scientific calculator built with React and Vite, featuring advanced mathematical functions, responsive design, and intuitive user interface.",
+      tech: ["React", "Vite", "JavaScript", "CSS"],
+      github: "https://github.com/yourusername/scical-react",
+      live: "https://reactscical-aquino-samson.netlify.app",
+      image: "/react (2).jpeg"
     },
     {
-      title: "Beta Dashboard",
-      description: "Analytics dashboard with interactive charts and data visualization tools for business intelligence.",
-      tech: ["React", "D3.js", "Firebase", "Material-UI"],
-      github: "https://github.com/yourusername/beta-dashboard",
-      live: "https://beta-dashboard.com",
-      image: "/leo.jpg"
+      title: "Pokemon",
+      description: "An interactive Pokemon application using the PokeAPI, allowing users to search, filter, and view detailed information about Pokemon with a clean and responsive interface.",
+      tech: ["React", "Vite", "PokeAPI", "CSS", "Axios"],
+      github: "https://github.com/Leyyyy23/pokedex",
+      live: "https://pokemonleo.netlify.app",
+      image: "/react (1).jpeg"
     },
   ];
 
@@ -25,7 +25,7 @@ const Projects = () => {
     <div className="projects-container">
       <div className="projects-content">
         <div className="projects-header">
-          <h2>Featured Projects</h2>
+          <h2>Featured Project</h2>
           <div className="header-line"></div>
         </div>
         
