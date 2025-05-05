@@ -25,7 +25,7 @@ const Projects = () => {
     <div className="projects-container">
       <div className="projects-content">
         <div className="projects-header">
-          <h2>Featured Projects</h2>
+          <h2>Featured Project</h2>
           <div className="header-line"></div>
         </div>
         
