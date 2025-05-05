@@ -42,7 +42,7 @@ const Contact = () => {
               </div>
               
               <div className="form-group">
-                <label htmlFor="subject">Subject</label>
+                <label htmlFor="subject">Subjects</label>
                 <input type="text" id="subject" name="subject" placeholder="Subject" required />
               </div>
               
