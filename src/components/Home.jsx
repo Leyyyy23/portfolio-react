@@ -15,7 +15,7 @@ const Hero = () => {
           transition={{ duration: 0.8 }}
         >
           <motion.h1
-            whileHover={{ scale: 1.05 }}
+            whileHover={{ scale: 1.05 }}  
             transition={{ type: "spring", stiffness: 300 }}
           >
             Leonard Aquino 
