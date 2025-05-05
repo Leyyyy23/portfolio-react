@@ -17,7 +17,9 @@ const Navbar = () => {
   const navItems = [
     { path: '/', label: 'Home' },
     { path: '/about', label: 'About' },
+    { path: '/experience', label: 'Experience' },
     { path: '/projects', label: 'Projects' },
+    { path: '/ojt-blog', label: 'OJT Blog' },
     { path: '/contact', label: 'Contact' }
   ]
 

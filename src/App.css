@@ -737,3 +737,130 @@ body {
     height: 250px;
   }
 }
+
+/* Experience Page Styles */
+.experience-container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 4rem 80px;
+  background: linear-gradient(135deg, rgba(15,15,15,1) 0%, rgba(35,35,35,1) 100%);
+  position: relative;
+}
+
+.experience-content {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.experience-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.experience-header h2 {
+  font-size: 3rem;
+  background: linear-gradient(45deg, var(--secondary-color), var(--primary-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1rem;
+}
+
+.experience-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.timeline-section {
+  width: 100%;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(78, 205, 196, 0.2);
+}
+
+.section-icon {
+  font-size: 1.8rem;
+}
+
+.timeline-card {
+  background: rgba(78, 205, 196, 0.05);
+  border: 1px solid rgba(78, 205, 196, 0.1);
+  border-radius: 20px;
+  padding: 2.5rem;
+  margin-bottom: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.timeline-header h4 {
+  font-size: 1.5rem;
+  color: var(--light-text);
+}
+
+.timeline-duration {
+  background: rgba(78, 205, 196, 0.1);
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  color: var(--primary-color);
+  font-size: 0.9rem;
+}
+
+.timeline-company {
+  font-size: 1.2rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.timeline-description {
+  color: #888;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .experience-container {
+    padding: 100px 2rem 60px;
+  }
+  
+  .experience-header h2 {
+    font-size: 2.5rem;
+  }
+  
+  .timeline-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  
+  .section-title {
+    font-size: 1.8rem;
+  }
+  
+  .timeline-card {
+    padding: 1.5rem;
+  }
+}
