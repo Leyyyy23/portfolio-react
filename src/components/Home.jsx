@@ -18,7 +18,7 @@ const Hero = () => {
             whileHover={{ scale: 1.05 }}
             transition={{ type: "spring", stiffness: 300 }}
           >
-            Leonard Aquino
+            Leonard Aquino 
           </motion.h1>
           
           <TypeAnimation
